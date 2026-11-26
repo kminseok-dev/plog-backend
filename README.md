@@ -112,7 +112,7 @@ docker compose -f docker-compose.local.yml up -d   # MySQL
 
 | 역할 | 담당 |
 |---|---|
-| 김민석 ([@kminseok-dev](https://github.com/kminseok-dev)) | dev CI/CD(`ci-check.yml`, `deploy-dev.yml`)·`docker-compose.dev.yml`·`Dockerfile`, 공통 응답(`global/response`), QueryDSL 도입(빌드 설정·`QuerydslRepositorySupport`, 이후 #84에서 정리), 커서 페이징 인프라(`global/support/paging`), **지도 도메인**(`domain/map`) |
-| 팀원 | 회원·인증(OAuth2/JWT), 게시글, 장소, 북마크, 뱃지, 이미지, 예외 체계, Nginx 설정 등 |
+| 김민석 ([@kminseok-dev](https://github.com/kminseok-dev)) | dev CI/CD(`ci-check.yml`, `deploy-dev.yml`)·`docker-compose.dev.yml`·`Dockerfile`, 공통 응답·예외 체계(`ApiResponse`, `AppException`, `ErrorType`/`ErrorCode`, `GlobalExceptionHandler` 구현), QueryDSL 도입(빌드 설정·`QuerydslRepositorySupport`, 이후 #84에서 정리), 커서 페이징 인프라(`global/support/paging`), **지도 도메인**(`domain/map`) |
+| 팀원 | 회원·인증(OAuth2/JWT), 게시글, 장소, 북마크, 뱃지, 이미지, 도메인별 에러 코드·SSE 예외 처리, Nginx 설정 등 |
 
 > 원본 레포: [swyp-web-13th-team4/plog-backend](https://github.com/swyp-web-13th-team4/plog-backend) · 이 README는 개인 fork에서 내 담당 기준으로 정리한 문서다.
